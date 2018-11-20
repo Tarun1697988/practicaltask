@@ -1,0 +1,12 @@
+
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-20.000000, -1221.000000)" fill="#FF4343" fill-rule="nonzero">
+            <g id="requieries" transform="translate(10.000000, 980.000000)">
+                <g id="must-not-be" transform="translate(10.000000, 240.000000)">
+                    <path d="M10.0000005,1 C4.47720047,1 0,5.47718776 0,10.99998 C0,16.5230022 4.47720047,21 10.0000005,21 C15.5229998,21 20,16.5230022 20,10.99998 C20,5.47718776 15.5229998,1 10.0000005,1 Z M6.46875057,6.0000125 L10.0000005,9.50000825 L13.5625007,6.0000125 L14.9687507,7.37501181 L11.4375003,10.99998 L14.9687507,14.4999783 L13.5625007,15.8749776 L10.0000005,12.3749793 L6.46875057,15.8749776 L5.0625,14.4999783 L8.59375043,10.99998 L5.0625,7.37501181 L6.46875057,6.0000125 Z" id="Shape-Copy"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
