@@ -1,0 +1,30 @@
+@import './global/normalize';
+
+// Bootstrap
+
+@import './bootstrap/bootstrap-grid.scss';
+
+
+@import './global/fonts.scss';
+@import './variables.scss';
+@import './global/global.scss';
+
+@import './global/button.scss';
+@import './block/pagination.scss';
+
+@import './block/navigation.scss';
+@import './block/page-header.scss';
+@import './block/page-footer.scss';
+
+@import './block/page-main.scss';
+
+@import './block/hero.scss';
+@import './block/treat.scss';
+@import './block/mission.scss';
+@import './block/requirement.scss';
+@import './block/benefit.scss';
+@import './block/steps.scss';
+@import './block/pricing.scss';
+@import './block/reviews.scss';
+@import './block/review-card.scss';
+@import './block/join-us.scss';

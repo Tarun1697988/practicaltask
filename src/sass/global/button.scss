@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding:0 1.875em; 
+  flex-shrink: 0;
+
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 0.889em;
+  line-height: 3.125em;
+  color: $second-font-color;
+  text-align: center;
+  vertical-align: top;
+  border-radius: 1.563em;
+  background-color: $second-bg;
+
+  transition: background-color 0.5s;
+
+
+  &:hover {
+    background-color: lighten($second-bg, 10%);
+  }
+
+  &:active {
+    background-color: darken($second-bg, 10%);
+  }
+}

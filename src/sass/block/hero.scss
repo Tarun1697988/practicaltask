@@ -1,0 +1,118 @@
+.hero {
+  display: flex;
+  padding: 1.667em 1.111em;
+
+  background-color: $third-bg;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 2.778em;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: -5em;
+    padding-top: 11.111em;
+    padding-bottom: 16.389em;
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  min-width: $min-width;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+  @include media-breakpoint-up(xl) {
+    width: $container-max-widths-xl;
+  }
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 20em;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 1.389em;
+
+  @include media-breakpoint-up(md) {
+    order: 1;
+    width: 50%;
+    max-width: 690px;
+    min-height: 366px;
+    margin: 0;
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(md) {
+    order: 0;
+    width: 50%;
+  }
+}
+
+.hero__title {
+  margin-bottom: 0.417em;
+
+  font-size: 1.333em;
+  line-height: 1.25em;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0.667em;
+
+    font-size: 1.667em;
+    line-height: 1.333em;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 2.222em;
+    line-height: 1.25em;
+  }
+}
+
+.hero__description {
+  margin-bottom: 1.444em;
+
+  font-weight: 300;
+
+  @include media-breakpoint-up(md) {
+    width: 80%;
+
+    &--desktop {
+      display: inline;
+    }
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.hero__plan {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(md) {
+    margin: 0;
+  }
+}
+
+.hero__price {
+  width: 90px;
+  margin-left: 1.071em;
+
+  font-size: 0.778em;
+  line-height: 1.286em;
+  font-family: $second-font;
+  color: $third-font-color;
+
+  @include media-breakpoint-up(md) {
+    width: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 0.889em;
+  }
+}

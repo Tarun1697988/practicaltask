@@ -1,0 +1,132 @@
+.pricing {
+  position: relative;
+  z-index: 1;
+
+  min-width: 300px;
+  width: 80%;
+  min-height: 430px;
+  margin: 0 auto;
+  margin-top: -215px;
+  padding: 30px 25px;
+
+  text-align: center;
+
+  background-color: $primary-bg;
+  border-radius: 10px;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 60px;
+  }
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    max-width: 1040px;
+    padding-left: 60px;
+  }
+  @include media-breakpoint-up(xl) {
+    min-height: 400px;
+    padding-left: 100px;
+  }
+}
+
+.pricing__wrapper {
+  @include media-breakpoint-up(lg) {
+    &:first-child {
+      width: 50%;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    &:first-child {
+      width: 42%;
+      margin-right: 90px;
+    }
+    &:last-child {
+      width: 29%;
+    }
+  }
+}
+
+.pricing__title {
+  margin-bottom: 15px;
+
+  font-size: 24px;
+  line-height: 26px;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: left;
+  }
+}
+
+.pricing__description {
+  margin-bottom: 26px;
+
+  font-weight: 300;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+
+      text-align: left;
+    }
+
+    &--second {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.pricing__start-price {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: $second-font;
+  color: $third-font-color;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 50px;
+
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
+.pricing__button {
+  width: 100%;
+
+  background-color: $fifth-bg;
+
+  @include media-breakpoint-up(sm) {
+    width: 160px;
+  }
+
+  &:hover {
+    line-height: 48px;
+    color: $primary-font-color;
+
+    background-color: $primary-bg;
+    border: 1px solid #000000;
+  }
+
+  &:active {
+    line-height: 50px;
+    color: $second-font-color;
+
+    background-color: lighten($fifth-bg,20%);
+    border: none;
+  }
+}

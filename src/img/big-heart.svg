@@ -1,0 +1,40 @@
+
+<svg width="514px" height="300px" viewBox="0 0 514 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M413.844358,1140.63372 L290.060859,1264.41723 C282.617154,1271.86092 270.548525,1271.86092 263.10482,1264.41723 L139.321323,1140.63372 C100.295302,1101.6077 100.222465,1038.36965 139.12607,999.285177 C177.033709,961.552366 237.350729,960.332999 276.58284,995.470559 C315.81495,960.332999 376.13197,961.552366 413.872082,999.117652 C452.943218,1038.36965 452.870377,1101.6077 413.844358,1140.63372 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="333.144666" height="300" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <polyline id="path-3" points="-32 1115 148.074219 1115 178 1075 228 1185 288 1025 348 1155 378 1115 445.777344 1115"></polyline>
+        <filter x="-4.6%" y="-12.5%" width="109.2%" height="127.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="15" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="15" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.797940341   0 0 0 0 0.797940341  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-5" cx="495" cy="1115" r="15"></circle>
+        <filter x="-23.3%" y="-16.7%" width="146.7%" height="146.7%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.796078431   0 0 0 0 0.796078431  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="-UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pix-Health_UI-Ver.2" transform="translate(-90.000000, -3980.000000)">
+            <g id="Path-4-Copy" transform="translate(90.000000, 3010.000000)">
+                <use id="Shape" stroke="#FFF7F7" mask="url(#mask-2)" stroke-width="16" fill="#FFE6E6" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="40,40" xlink:href="#path-1"></use>
+                <g id="Path-4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1,5" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use stroke="#FFF7F7" stroke-width="30" xlink:href="#path-3"></use>
+                </g>
+                <g id="Oval-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="#FFF7F7" fill-rule="evenodd" xlink:href="#path-5"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

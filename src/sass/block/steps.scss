@@ -1,0 +1,145 @@
+.steps {
+  min-width: $min-width;
+  margin: 0 auto;
+  padding: 2.222em 1.111em;
+  padding-bottom: 15.556em;
+
+  background-color: $fourth-bg;
+
+  @include media-breakpoint-up(xl) {
+    max-width: $full-width;
+    padding-top: 5.278em;
+    padding-bottom: 19.444em;
+
+    border-radius: 0.556em;
+  }
+}
+
+.steps__list {
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @include media-breakpoint-up(xl) {
+    width: $container-max-widths-xl;
+    margin: 0 auto;
+  }
+}
+
+.steps__item {
+  position: relative;
+
+  margin-bottom: 2.222em;
+
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    width: 270px;
+
+    text-align: left;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.steps__popup {
+  position: absolute;
+  top: 165px;
+  left: calc(50% - 135px);
+  z-index: 11;
+
+  transform: scaleY(0);
+  width: 270px;
+  padding: 20px;
+
+  background-color: $primary-bg;
+  border-radius: 5px;
+
+  transition: transform 1s ease-in-out;
+
+
+}
+
+.steps__item--show .steps__popup {
+  transform: scaleY(1);
+}
+
+.steps__image {
+  width: 109px;
+  height: 98px;
+  margin-bottom: 1.111em;
+}
+
+.steps__wrapper {
+  position: relative;
+
+  margin: 0 auto;
+}
+
+.steps__title {
+  display: inline-block;
+  margin-bottom: 0.556em;
+
+  font-size: 1em;
+  line-height: 1.667em;
+}
+
+.steps__button {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  width: 21px;
+  height: 21px;
+
+  font-weight: 300;
+  font-size: 0.556em;
+  line-height: 1em;
+  vertical-align: middle;
+
+  border: none;
+
+  &:hover {
+    background-color: $fifth-bg;
+  }
+
+  &--auth {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    height: 0;
+    transform: scale(0);
+    transition: height 1s step-end;
+  }
+  &:focus {
+    outline: 1px solid #2860ff;
+
+  }
+}
+
+.steps__item--show .steps__button {
+  
+ 
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: calc(50% - 8px);
+
+    width: 16px;
+    height: 16px;
+
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    
+    
+  }
+}

@@ -1,0 +1,118 @@
+.hero {
+  display: flex;
+  padding: 30px 20px;
+
+  background-color: $third-bg;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 50px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: -90px;
+    padding-top: 200px;
+    padding-bottom: 295px;
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  min-width: $min-width;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+  @include media-breakpoint-up(xl) {
+    width: $container-max-widths-xl;
+  }
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  @include media-breakpoint-up(md) {
+    order: 1;
+    width: 50%;
+    max-width: 690px;
+    min-height: 366px;
+    margin: 0;
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up(md) {
+    order: 0;
+    width: 50%;
+  }
+}
+
+.hero__title {
+  margin-bottom: 10px;
+
+  font-size: 24px;
+  line-height: 30px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+.hero__description {
+  margin-bottom: 26px;
+
+  font-weight: 300;
+
+  @include media-breakpoint-up(md) {
+    width: 80%;
+
+    &--desktop {
+      display: inline;
+    }
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+.hero__plan {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(md) {
+    margin: 0;
+  }
+}
+
+.hero__price {
+  width: 90px;
+  margin-left: 15px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $second-font;
+  color: $third-font-color;
+
+  @include media-breakpoint-up(md) {
+    width: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 16pxl;
+  }
+}

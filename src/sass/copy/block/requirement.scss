@@ -1,0 +1,101 @@
+.requirement {
+  min-width: $min-width;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  padding: 0 20px;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+  }
+  @include media-breakpoint-up(xl) {
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 100px;
+    padding: 0 50px;
+  }
+}
+
+.requirement__group {
+  @include media-breakpoint-up(md) {
+    width: 45%;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 100%;
+  }
+  &:first-child {
+    margin-bottom: 40px;
+  }
+}
+
+.requirement__title {
+  position: relative;
+
+  margin-bottom: 15px;
+  padding-left: 31px;
+
+  font-size: 18px;
+  line-height: 22px;
+
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 20px;
+
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  &--correct::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../../img/correct-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--wrong::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../../img/wrong-icon.svg");
+    background-repeat: no-repeat;
+  }
+}
+.requirement__hidden {
+  display: none;
+}
+
+.requirement__list {
+  padding-left: 20px;
+
+  list-style: disc;
+}
+
+.requirement__item {
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

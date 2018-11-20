@@ -1,0 +1,22 @@
+
+.page-main__mission {
+  margin-bottom: 45px;
+}
+
+.page-main__treat {
+  display: none;
+
+  @include media-breakpoint-up(xl) {
+    display: block;
+  }
+}
+
+.page-main__container {
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    margin: 0 auto;
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: $container-max-widths-xl;
+  }
+}

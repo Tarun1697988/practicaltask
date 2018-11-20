@@ -1,0 +1,35 @@
+.mission {
+  min-width: $min-width;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  padding: 0 20px;
+  padding-top: 45px;
+
+  @include media-breakpoint-up(lg) {
+    width: 50%;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 0 40px;
+  }
+}
+
+.mission_title {
+  margin-bottom: 15px;
+
+  font-size: 24px;
+  line-height: 30px;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 32px;
+    line-height: 50px;
+  }
+}
+
+.mission__description {
+  font-weight: 300;
+
+  @include media-breakpoint-up(xl) {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
